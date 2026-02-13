@@ -13,7 +13,7 @@ def initialize_database(): #initialising the database
     conn = connect_db()
     cursor = conn.cursor()
 
-    # Create users table
+    # Creating users table
     cursor.execute("""
     CREATE TABLE IF NOT EXISTS users (
         id INTEGER PRIMARY KEY AUTOINCREMENT,
@@ -23,7 +23,7 @@ def initialize_database(): #initialising the database
     )
     """)
 
-    # Create tickets table
+    # Creating tickets table
     cursor.execute("""
     CREATE TABLE IF NOT EXISTS tickets (
         id INTEGER PRIMARY KEY AUTOINCREMENT,
